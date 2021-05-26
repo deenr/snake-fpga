@@ -1,0 +1,87 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=3;
+DEPTH=2040;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	[0..60]  :   110;
+	[61..118]  :   111;
+	[119..120]  :   110;
+	[121..178]  :   111;
+	[179..180]  :   110;
+	[181..238]  :   111;
+	[239..240]  :   110;
+	[241..298]  :   111;
+	[299..300]  :   110;
+	[301..358]  :   111;
+	[359..360]  :   110;
+	[361..418]  :   111;
+	[419..420]  :   110;
+	[421..478]  :   111;
+	[479..480]  :   110;
+	[481..538]  :   111;
+	[539..540]  :   110;
+	[541..598]  :   111;
+	[599..600]  :   110;
+	[601..658]  :   111;
+	[659..660]  :   110;
+	[661..718]  :   111;
+	[719..720]  :   110;
+	[721..778]  :   111;
+	[779..780]  :   110;
+	[781..838]  :   111;
+	[839..840]  :   110;
+	[841..898]  :   111;
+	[899..900]  :   110;
+	[901..958]  :   111;
+	[959..960]  :   110;
+	[961..1018]  :   111;
+	[1019..1020]  :   110;
+	[1021..1078]  :   111;
+	[1079..1080]  :   110;
+	[1081..1138]  :   111;
+	[1139..1140]  :   110;
+	[1141..1198]  :   111;
+	[1199..1200]  :   110;
+	[1201..1258]  :   111;
+	[1259..1260]  :   110;
+	[1261..1318]  :   111;
+	[1319..1320]  :   110;
+	[1321..1378]  :   111;
+	[1379..1380]  :   110;
+	[1381..1438]  :   111;
+	[1439..1440]  :   110;
+	[1441..1498]  :   111;
+	[1499..1500]  :   110;
+	[1501..1558]  :   111;
+	[1559..1560]  :   110;
+	[1561..1618]  :   111;
+	[1619..1620]  :   110;
+	[1621..1678]  :   111;
+	[1679..1680]  :   110;
+	[1681..1738]  :   111;
+	[1739..1740]  :   110;
+	[1741..1798]  :   111;
+	[1799..1800]  :   110;
+	[1801..1858]  :   111;
+	[1859..1919]  :   110;
+	[1920..2039]  :   000;
+END;
