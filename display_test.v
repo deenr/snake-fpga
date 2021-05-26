@@ -119,6 +119,7 @@ random_grind rg (.clock(clock),
 
 	
 always@(posedge clock) begin
+	// aantal punten worden weergegeven op de leds (dit zou uiteindelijk in het gameover scherm komen)
 	LEDR[7:0] <= points_counter;
 	
 	apple_counter = apple_counter + 1;
@@ -127,6 +128,7 @@ always@(posedge clock) begin
 		apple_y <= 50;
 	end else begin	
 		if(good_collision) begin
+			// als de random coordinaten buiten het veld vallen wordt er een fixt waarde genomen, als ze erbinnen vallen niet
 			if((rand_x<100) || (rand_x>1874) || (rand_y<100) || (rand_y>1020)) begin
 				apple_x <= 100;
 				apple_y <= 100;
@@ -135,6 +137,7 @@ always@(posedge clock) begin
 				apple_y <= rand_y;
 			end
 		end else if(~start) begin
+			// als de random coordinaten buiten het veld vallen wordt er een fixt waarde genomen, als ze erbinnen vallen niet
 			if((rand_x<100) || (rand_x>1874) || (rand_y<100) || (rand_y>1020)) begin
 				apple_x <=340;
 				apple_y <=430;
@@ -147,6 +150,7 @@ always@(posedge clock) begin
 end
 	
 always @(posedge clock) begin
+	// kijkt of vga display signalen op de appel zit
 	apple_in_x <= (display_col > apple_x && display_col < (apple_x + 25));
 	apple_in_y <= (display_row > apple_y && display_row < (apple_y + 25));
 	apple = apple_in_x && apple_in_y;
@@ -155,6 +159,7 @@ end
 	
 always@(posedge update_clock) begin
 	if(start) begin
+		// gaat van achter naar voor werken dus als dit de slang is [3][2][1][0] dan zullen alle waardes opschuiven door de for loop naar [][3][2][1] waardoor de lege wegvalt
 		for(count1 = 127; count1 > 0; count1 = count1 - 1) begin
 			if(count1 <= size - 1) begin
 				snake_x[count1] = snake_x[count1 - 1];
@@ -162,6 +167,8 @@ always@(posedge update_clock) begin
 			end
 		end
 		
+		// door deze case zal de [0] naar boven, onder, links of rechts gaan waardoor we terug een slang hebben van bijvoorbeeld [3][2][1]
+		//																																										 [0]
 		case(direction)
 			UP    : snake_y[0] <= (snake_y[0] - 25);
 			LEFT  : snake_x[0] <= (snake_x[0] - 25);
@@ -169,6 +176,7 @@ always@(posedge update_clock) begin
 			RIGHT : snake_x[0] <= (snake_x[0] + 25);
 		endcase	
 	end else if(~start) begin
+		// hier gaan we alle waardes opnieuw instellen omdat we verloren zijn
 		snake_x[0] <= 920;
 		snake_y[0] <= 540;
 		for(count3 = 1; count3 < 128; count3 = count3+1) begin
@@ -180,7 +188,7 @@ end
 	
 always@(posedge clock) begin
 	found = 0;
-	
+	// er wordt gekeken of de coordinaten van de VGA nu op de body van de slang zitten of niet
 	for(count2 = 1; count2 < size; count2 = count2 + 1) begin
 		if(~found) begin				
 			snake_body = ((display_col > snake_x[count2] && display_col < snake_x[count2]+25) && (display_row > snake_y[count2] && display_row < snake_y[count2]+25));
@@ -190,18 +198,23 @@ always@(posedge clock) begin
 end
 
 always@(posedge clock) begin	
+	// er wordt gekeken of de coordinaten van de VGA nu op het hoofd van de slang zitten of niet
 	snake_head = (display_col > snake_x[0] && display_col < (snake_x[0]+25)) && (display_row > snake_y[0] && display_row < (snake_y[0]+25));
 end
 		
+// kijkt of vga display signalen op de border of lichaam van de slang zit
 assign lethal = border || snake_body;
+// kijkt of vga display signalen op de appel zit
 assign non_lethal = apple;
 	
 always @(posedge clock) begin
 	if(non_lethal && snake_head) begin
+		// slang eet een appel op
 		good_collision <= 1;
 		size = size + 1;
 		points_counter = points_counter + 1;
 	end else if(~start) begin
+		// game start, dus alles gereset
 		size = 1;
 		points_counter = 0;		
 	end else begin
@@ -210,6 +223,7 @@ always @(posedge clock) begin
 end
 
 always @(posedge clock) begin
+	// als de slang de border of zichzelf raakt, is bad_collision
 	if(lethal && snake_head) begin
 		bad_collision<=1;
 	end else begin 
@@ -218,6 +232,7 @@ always @(posedge clock) begin
 end
 
 always @(posedge clock) begin
+	// bad_collision = game over!
 	if(bad_collision) begin
 		game_over<=1;
 	end else if (~start) begin
