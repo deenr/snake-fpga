@@ -1,8 +1,8 @@
-Warning (10268): Verilog HDL information at display_test.v(121): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 121
-Warning (10268): Verilog HDL information at display_test.v(149): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 149
-Warning (10268): Verilog HDL information at display_test.v(156): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 156
-Warning (10268): Verilog HDL information at display_test.v(199): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 199
-Warning (10268): Verilog HDL information at display_test.v(212): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 212
-Warning (10268): Verilog HDL information at display_test.v(220): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 220
-Warning (10268): Verilog HDL information at display_test.v(253): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 253
-Warning (10268): Verilog HDL information at display_test.v(270): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga - kopie/display_test.v Line: 270
+Warning (10268): Verilog HDL information at display_test.v(164): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 164
+Warning (10268): Verilog HDL information at display_test.v(195): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 195
+Warning (10268): Verilog HDL information at display_test.v(203): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 203
+Warning (10268): Verilog HDL information at display_test.v(253): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 253
+Warning (10268): Verilog HDL information at display_test.v(281): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 281
+Warning (10268): Verilog HDL information at display_test.v(290): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 290
+Warning (10268): Verilog HDL information at display_test.v(338): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 338
+Warning (10268): Verilog HDL information at display_test.v(355): always construct contains both blocking and non-blocking assignments File: D:/Coding/SOCLAB/snake-fpga-kopie/display_test.v Line: 355

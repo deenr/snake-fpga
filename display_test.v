@@ -80,6 +80,21 @@ reg [1:0] direction; //Direction of the snake
 //parameter rows 	       = 32;
 //parameter bordersize     = 32;
 
+
+wire [14:0] fontaddress;
+wire [3:0] f_pixel_hor;
+wire [3:0] f_pixel_ver;
+wire [6:0] char_col;
+wire [5:0] char_row;
+reg [6:0] text_buffer_out;
+parameter contents = "text.hex";
+reg [6:0] memory [119:0];
+
+//Points_counter opsplitsen (gemakkelijker om weer te geven achteraf)
+reg[3:0] points_counter_eh;
+reg[3:0] points_counter_tt;
+reg[3:0] points_counter_ht;
+
 //----------------------------------
 
 
@@ -114,6 +129,34 @@ ps2_keyboard ps2_keyboard (.CLK(clock),
 random_grind rg (.clock(clock),
 					  .rand_x(rand_x),
 					  .rand_y(rand_y));
+
+fontrom fontrom(
+	fontaddress, 
+	clock, 
+	pixelout
+);
+
+
+// ---------------------------------------------
+
+assign f_pixel_hor = display_col[6:3];
+assign f_pixel_ver = display_row[6:3];
+assign char_col = display_col[11:7];
+assign char_row = display_row[10:7];
+assign fontaddress = {text_buffer_out, f_pixel_ver, f_pixel_hor}; 
+
+initial begin
+	$readmemh(contents, memory);
+end
+
+always @(*)
+begin
+	memory[69] = points_counter_ht + 48;
+	memory[70] = points_counter_tt + 48;
+	memory[71] = points_counter_eh + 48;
+	
+	text_buffer_out = memory[char_row * 15 + char_col];
+end
 
 // ---------------------------------------------
 
@@ -212,11 +255,24 @@ always @(posedge clock) begin
 		// slang eet een appel op
 		good_collision <= 1;
 		size = size + 1;
-		points_counter = points_counter + 1;
+		if(points_counter_eh < 9) begin
+			points_counter_eh = points_counter_eh + 1;
+		end
+		else if(points_counter_tt < 9) begin
+			points_counter_eh = 0;
+			points_counter_tt = points_counter_tt + 1;
+		end
+		else if(points_counter_ht < 9) begin
+			points_counter_eh = 0;
+			points_counter_tt = 0;
+			points_counter_ht = points_counter_ht + 1;
+		end
 	end else if(~start) begin
 		// game start, dus alles gereset
 		size = 1;
-		points_counter = 0;		
+		points_counter_eh = 0;
+		points_counter_tt = 0;
+		points_counter_ht = 0;
 	end else begin
 		good_collision=0;
 	end
@@ -250,11 +306,25 @@ always @(posedge clock or posedge reset) begin
 		red   = 1'b0;
 		green = 1'b0;
 		blue  = 1'b0;
+		$readmemh(contents, memory); //NIEUW
 	end else begin
 		if (visible) begin
-			red   = (apple || game_over);
-			green = ((snake_head||snake_body) && ~game_over);
-			blue  = (border && ~game_over);
+			if(game_over) begin
+				if (pixelout == 1) begin 		// Character foreground
+					red   = 1'b1;
+					green = 1'b1;
+					blue  = 1'b1;
+				end
+				else begin 							// Character background
+					red   = 1'b1;
+					green = 1'b0;
+					blue  = 1'b0;
+				end
+			end else begin
+				red   = apple;
+				green = (snake_head || snake_body);
+				blue  = border;
+			end
 		end
 		else begin
 			red   = 1'b0;

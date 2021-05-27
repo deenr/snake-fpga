@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE1_SOC
-Wed May 26 22:39:19 2021
+Thu May 27 16:02:19 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -101,14 +101,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.28        ;
+; Average used               ; 2.24        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  42.7%      ;
-;     Processor 3            ;  42.6%      ;
-;     Processor 4            ;  42.6%      ;
+;     Processor 2            ;  41.6%      ;
+;     Processor 3            ;  41.5%      ;
+;     Processor 4            ;  41.4%      ;
 +----------------------------+-------------+
 
 
@@ -117,7 +117,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; DE1_SOC.SDC   ; OK     ; Wed May 26 22:38:58 2021 ;
+; DE1_SOC.SDC   ; OK     ; Thu May 27 16:01:58 2021 ;
 +---------------+--------+--------------------------+
 
 
@@ -144,7 +144,7 @@ agreement for further details.
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                             ; Note ;
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
-; 73.72 MHz ; 73.72 MHz       ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 71.81 MHz ; 71.81 MHz       ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -160,8 +160,8 @@ HTML report is unavailable in plain text report export.
 +----------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                  ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------+--------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.305 ; -4.305        ;
-; clk_vga                                                                                ; -3.687 ; -70.285       ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.666 ; -4.666        ;
+; clk_vga                                                                                ; -3.799 ; -70.400       ;
 +----------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -193,7 +193,7 @@ No paths to report.
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.925 ; 0.000         ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.818 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.400 ; 0.000         ;
 ; CLOCK_50                                                                               ; 9.670 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -209,7 +209,7 @@ No synchronizer chains to report.
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                             ; Note ;
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
-; 76.66 MHz ; 76.66 MHz       ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 74.23 MHz ; 74.23 MHz       ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +-----------+-----------------+----------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -219,8 +219,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                  ; Slack  ; End Point TNS ;
 +----------------------------------------------------------------------------------------+--------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.785 ; -3.785        ;
-; clk_vga                                                                                ; -3.324 ; -64.178       ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.212 ; -4.212        ;
+; clk_vga                                                                                ; -3.434 ; -64.291       ;
 +----------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -229,7 +229,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.310 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.371 ; 0.000         ;
 ; clk_vga                                                                                ; 8.337 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -252,7 +252,7 @@ No paths to report.
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.925 ; 0.000         ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.785 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.378 ; 0.000         ;
 ; CLOCK_50                                                                               ; 9.673 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -268,8 +268,8 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.056 ; 0.000         ;
-; clk_vga                                                                                ; 1.411 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.893 ; 0.000         ;
+; clk_vga                                                                                ; 1.331 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -278,7 +278,7 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.179 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.178 ; 0.000         ;
 ; clk_vga                                                                                ; 4.473 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -301,7 +301,7 @@ No paths to report.
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.925 ; 0.000         ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4.156 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.515 ; 0.000         ;
 ; CLOCK_50                                                                               ; 9.336 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -317,8 +317,8 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.857 ; 0.000         ;
-; clk_vga                                                                                ; 1.858 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.706 ; 0.000         ;
+; clk_vga                                                                                ; 1.790 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -327,7 +327,7 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.168 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.170 ; 0.000         ;
 ; clk_vga                                                                                ; 4.169 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -350,7 +350,7 @@ No paths to report.
 ; Clock                                                                                  ; Slack ; End Point TNS ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.925 ; 0.000         ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 4.149 ; 0.000         ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 3.514 ; 0.000         ;
 ; CLOCK_50                                                                               ; 9.286 ; 0.000         ;
 +----------------------------------------------------------------------------------------+-------+---------------+
 
@@ -366,16 +366,16 @@ No synchronizer chains to report.
 +-----------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
 ; Clock                                                                                   ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-----------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                        ; -4.305  ; 0.168 ; N/A      ; N/A     ; 0.925               ;
+; Worst-case Slack                                                                        ; -4.666  ; 0.170 ; N/A      ; N/A     ; 0.925               ;
 ;  CLOCK_50                                                                               ; N/A     ; N/A   ; N/A      ; N/A     ; 9.286               ;
-;  clk_vga                                                                                ; -3.687  ; 4.169 ; N/A      ; N/A     ; N/A                 ;
+;  clk_vga                                                                                ; -3.799  ; 4.169 ; N/A      ; N/A     ; N/A                 ;
 ;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.925               ;
-;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.305  ; 0.168 ; N/A      ; N/A     ; 3.785               ;
-; Design-wide TNS                                                                         ; -74.59  ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.666  ; 0.170 ; N/A      ; N/A     ; 3.378               ;
+; Design-wide TNS                                                                         ; -75.066 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLOCK_50                                                                               ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  clk_vga                                                                                ; -70.285 ; 0.000 ; N/A      ; N/A     ; N/A                 ;
+;  clk_vga                                                                                ; -70.400 ; 0.000 ; N/A      ; N/A     ; N/A                 ;
 ;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.305  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.666  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +-----------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -1169,7 +1169,7 @@ No synchronizer chains to report.
 ; From Clock                                                                             ; To Clock                                                                               ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk_vga                                                                                ; 26       ; 0        ; 0        ; 0        ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 293332   ; 0        ; 0        ; 0        ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 300174   ; 0        ; 0        ; 0        ;
 +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1180,7 +1180,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; From Clock                                                                             ; To Clock                                                                               ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; clk_vga                                                                                ; 26       ; 0        ; 0        ; 0        ;
-; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 293332   ; 0        ; 0        ; 0        ;
+; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 300174   ; 0        ; 0        ; 0        ;
 +----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1205,9 +1205,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
 ; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 3120  ; 3120 ;
-; Unconstrained Output Ports      ; 11    ; 11   ;
-; Unconstrained Output Port Paths ; 25    ; 25   ;
+; Unconstrained Input Port Paths  ; 3123  ; 3123 ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
 +---------------------------------+-------+------+
 
 
@@ -1248,15 +1248,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[9]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_HS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_VS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -1279,15 +1270,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDR[9]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_HS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_VS      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -1299,7 +1281,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed May 26 22:38:55 2021
+    Info: Processing started: Thu May 27 16:01:55 2021
 Info: Command: quartus_sta DE1_SOC -c DE1_SOC
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1308,38 +1290,38 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): TimeQuest Timing Analyzer is analyzing 4 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'DE1_SOC.SDC'
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 18
-    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 18
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 18
-Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 29
-Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 29
-    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 29
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 30
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 30
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 30
-Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 31
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 31
-Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 31
-Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 32
-    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 32
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Time value "1.536 MH" is not valid File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 18
+    Info (332050): create_clock -period "1.536 MH" -name clk_audbck [get_ports AUD_BCLK] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 18
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(18): Option -period: Invalid clock period File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 18
+Warning (332174): Ignored filter at DE1_SOC.sdc(29): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 29
+Warning (332049): Ignored create_clock at DE1_SOC.sdc(29): Argument <targets> is not an object ID File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 29
+    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 29
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tdi could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(30): altera_reserved_tck could not be matched with a clock File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 30
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 30
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(30): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 30
+Warning (332174): Ignored filter at DE1_SOC.sdc(31): altera_reserved_tms could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 31
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 31
+Warning (332049): Ignored set_input_delay at DE1_SOC.sdc(31): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 31
+Warning (332174): Ignored filter at DE1_SOC.sdc(32): altera_reserved_tdo could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 32
+    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 32
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(32): Argument -clock is not an object ID File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 32
 Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin} -divide_by 5 -multiply_by 54 -duty_cycle 50.00 -name {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]} {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]}
     Info (332110): create_generated_clock -source {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 5 -duty_cycle 50.00 -name {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
-Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 101
-    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 101
-Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 102
-    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: D:/Coding/SOCLAB/snake-fpga - kopie/DE1_SOC.sdc Line: 102
+Warning (332174): Ignored filter at DE1_SOC.sdc(101): VGA_BLANK could not be matched with a port File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(101): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 101
+    Info (332050): set_output_delay -max -clock clk_vga 0.215 [get_ports VGA_BLANK] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 101
+Warning (332049): Ignored set_output_delay at DE1_SOC.sdc(102): Argument <targets> is an empty collection File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 102
+    Info (332050): set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK] File: D:/Coding/SOCLAB/snake-fpga-kopie/DE1_SOC.sdc Line: 102
 Warning (332060): Node: display_test1:display_test1|update_clock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register display_test1:display_test1|snake_y[0][5] is being clocked by display_test1:display_test1|update_clock
+    Info (13166): Register display_test1:display_test1|snake_x[0][3] is being clocked by display_test1:display_test1|update_clock
 Warning (332060): Node: display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch display_test1:display_test1|direction.RIGHT_36949 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
+    Info (13166): Latch display_test1:display_test1|direction.LEFT_38821 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1349,11 +1331,11 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.305
+Info (332146): Worst-case setup slack is -4.666
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.305              -4.305 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.687             -70.285 clk_vga 
+    Info (332119):    -4.666              -4.666 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.799             -70.400 clk_vga 
 Info (332146): Worst-case hold slack is 0.361
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1365,15 +1347,15 @@ Info (332146): Worst-case minimum pulse width slack is 0.925
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.925               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     3.818               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.400               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     9.670               0.000 CLOCK_50 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: display_test1:display_test1|update_clock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register display_test1:display_test1|snake_y[0][5] is being clocked by display_test1:display_test1|update_clock
+    Info (13166): Register display_test1:display_test1|snake_x[0][3] is being clocked by display_test1:display_test1|update_clock
 Warning (332060): Node: display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch display_test1:display_test1|direction.RIGHT_36949 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
+    Info (13166): Latch display_test1:display_test1|direction.LEFT_38821 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1381,15 +1363,15 @@ Info (332097): The following timing edges are non-unate.  TimeQuest will assume 
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.785
+Info (332146): Worst-case setup slack is -4.212
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.785              -3.785 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.324             -64.178 clk_vga 
-Info (332146): Worst-case hold slack is 0.310
+    Info (332119):    -4.212              -4.212 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.434             -64.291 clk_vga 
+Info (332146): Worst-case hold slack is 0.371
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.310               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.371               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     8.337               0.000 clk_vga 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -1397,29 +1379,29 @@ Info (332146): Worst-case minimum pulse width slack is 0.925
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.925               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     3.785               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.378               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     9.673               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Warning (332060): Node: display_test1:display_test1|update_clock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register display_test1:display_test1|snake_y[0][5] is being clocked by display_test1:display_test1|update_clock
+    Info (13166): Register display_test1:display_test1|snake_x[0][3] is being clocked by display_test1:display_test1|update_clock
 Warning (332060): Node: display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch display_test1:display_test1|direction.RIGHT_36949 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
+    Info (13166): Latch display_test1:display_test1|direction.LEFT_38821 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.056
+Info (332146): Worst-case setup slack is 0.893
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.056               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     1.411               0.000 clk_vga 
-Info (332146): Worst-case hold slack is 0.179
+    Info (332119):     0.893               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.331               0.000 clk_vga 
+Info (332146): Worst-case hold slack is 0.178
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.179               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.178               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     4.473               0.000 clk_vga 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -1427,27 +1409,27 @@ Info (332146): Worst-case minimum pulse width slack is 0.925
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.925               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     4.156               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.515               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     9.336               0.000 CLOCK_50 
 Info: Analyzing Fast 1100mV 0C Model
 Warning (332060): Node: display_test1:display_test1|update_clock was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register display_test1:display_test1|snake_y[0][5] is being clocked by display_test1:display_test1|update_clock
+    Info (13166): Register display_test1:display_test1|snake_x[0][3] is being clocked by display_test1:display_test1|update_clock
 Warning (332060): Node: display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch display_test1:display_test1|direction.RIGHT_36949 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
+    Info (13166): Latch display_test1:display_test1|direction.LEFT_38821 is being clocked by display_test1:display_test1|ps2_keyboard:ps2_keyboard|key_pressed_code[0]
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.857
+Info (332146): Worst-case setup slack is 1.706
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.857               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     1.858               0.000 clk_vga 
-Info (332146): Worst-case hold slack is 0.168
+    Info (332119):     1.706               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.790               0.000 clk_vga 
+Info (332146): Worst-case hold slack is 0.170
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.168               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.170               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     4.169               0.000 clk_vga 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
@@ -1455,13 +1437,13 @@ Info (332146): Worst-case minimum pulse width slack is 0.925
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.925               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     4.149               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     3.514               0.000 display_test1|u1|pll108mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):     9.286               0.000 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 5394 megabytes
-    Info: Processing ended: Wed May 26 22:39:19 2021
+    Info: Peak virtual memory: 5422 megabytes
+    Info: Processing ended: Thu May 27 16:02:19 2021
     Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:48
 

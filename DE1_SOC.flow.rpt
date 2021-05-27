@@ -1,5 +1,5 @@
 Flow report for DE1_SOC
-Wed May 26 22:39:19 2021
+Thu May 27 16:02:19 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 26 22:38:54 2021       ;
+; Flow Status                     ; Successful - Thu May 27 16:01:54 2021       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SOC                                     ;
 ; Top-level Entity Name           ; DE1_SOC                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 5,748 / 32,070 ( 18 % )                     ;
-; Total registers                 ; 3233                                        ;
+; Logic utilization (in ALMs)     ; 5,801 / 32,070 ( 18 % )                     ;
+; Total registers                 ; 3228                                        ;
 ; Total pins                      ; 168 / 457 ( 37 % )                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total block memory bits         ; 32,768 / 4,065,280 ( < 1 % )                ;
 ; Total DSP Blocks                ; 2 / 87 ( 2 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/26/2021 22:34:26 ;
+; Start date & time ; 05/27/2021 15:56:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_SOC             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 75361036221347.162206126610992         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 75361036221347.162212381117172         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; ColorMemory_bb.v                       ; --            ; --          ; --         ;
@@ -100,11 +100,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:46     ; 1.0                     ; 4936 MB             ; 00:01:03                           ;
-; Fitter                    ; 00:03:24     ; 1.2                     ; 6980 MB             ; 00:07:14                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4904 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:24     ; 2.3                     ; 5394 MB             ; 00:00:48                           ;
-; Total                     ; 00:04:45     ; --                      ; --                  ; 00:09:16                           ;
+; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 4941 MB             ; 00:01:05                           ;
+; Fitter                    ; 00:03:55     ; 1.2                     ; 6999 MB             ; 00:08:08                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4906 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:23     ; 2.2                     ; 5422 MB             ; 00:00:48                           ;
+; Total                     ; 00:05:19     ; --                      ; --                  ; 00:10:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

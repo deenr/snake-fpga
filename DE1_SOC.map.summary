@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Wed May 26 22:35:13 2021
+Analysis & Synthesis Status : Successful - Thu May 27 15:57:42 2021
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : DE1_SOC
 Top-level Entity Name : DE1_SOC
@@ -7,7 +7,7 @@ Logic utilization (in ALMs) : N/A
 Total registers : 3174
 Total pins : 168
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 32,768
 Total DSP Blocks : 2
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
